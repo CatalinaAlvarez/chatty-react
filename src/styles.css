@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Alegreya', serif;
-  background-color: #fcfcfc;
+  background-color: #daf0f5;
 }
 
 .chat-area, .home {
@@ -13,7 +13,7 @@ body {
   padding: 20px;
   height: 400px;
   overflow-y: scroll;
-  background-color: #f1f9fc;
+  background-color: #f1f7f8;
 }
 
 .chat-area .chat-bubble {
@@ -34,7 +34,7 @@ body {
 
 .chat-area .chat-bubble.current-user {
   margin-left: auto;
-  background-color: #a4c9be;
+  background-color: #c1f5ee;
 }
 
 .form-control {
