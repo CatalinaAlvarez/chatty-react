@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya', serif;
   background-color: #fcfcfc;
 }
 
@@ -67,4 +67,13 @@ body {
 .card{
   max-width: 30rem;
   justify-content: center;
+  margin-top: 20px;
+}
+
+.form-control {
+  width: 50vh;
+}
+
+.chatArea{
+  width: 150vh;
 }

@@ -58,14 +58,15 @@ export default class Login extends Component {
           onSubmit={this.handleSubmit}
         >
           <h1>
-            Login to
+            Iniciar sesión en
             <Link className="title ml-2" to="/">
               Chatty
             </Link>
           </h1>
           <p className="lead">
-            Fill in the form below to login to your account.
+            Llena la información para acceder a tu cuenta
           </p>
+          <div class="form-group">
           <div className="form-group align-item-center">
             <input
               className="form-control"
@@ -86,22 +87,23 @@ export default class Login extends Component {
               type="password"
             />
           </div>
+          </div>
           <div className="form-group">
             {this.state.error ? (
               <p className="text-danger">{this.state.error}</p>
             ) : null}
-            <button className="btn btn-primary px-5" type="submit">Login</button>
+            <button className="btn btn-primary px-5" type="submit">Iniciar sesión</button>
           </div>
-          <p>You can also log in with any of these services</p>
-          <button className="btn btn-danger mr-2" type="button" onClick={this.googleSignIn}>
-            Sign in with Google
+          <p>También puedes iniciar sesión con estos servicios</p>
+          <button className="btn btn-info mr-2" type="button" onClick={this.googleSignIn}>
+            Iniciar con Google
           </button>
           <button className="btn btn-secondary" type="button" onClick={this.githubSignIn}>
-            Sign in with GitHub
+            Iniciar con GitHub
           </button>
           <hr />
           <p>
-            Don't have an account? <Link to="/signup">Sign up</Link>
+            ¿No tienes una cuenta? <Link to="/signup">Registrarse</Link>
           </p>
         </form>
         </div>

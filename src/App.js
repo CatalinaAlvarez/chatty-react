@@ -10,7 +10,6 @@ import Chat from "./pages/Chat";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import { auth } from "./services/firebase";
-import Header from './components/Header';
 import './styles.css';
 
 function PrivateRoute({ component: Component, authenticated, ...rest }) {
@@ -78,7 +77,6 @@ class App extends Component {
       </div>
     ) : (
       <Router>
-        <Header></Header>
         <Switch>
           <Route exact path="/" component={Home} />
           <PrivateRoute

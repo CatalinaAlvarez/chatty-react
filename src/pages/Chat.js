@@ -106,7 +106,7 @@ export default class Chat extends Component {
         </div>
         <form onSubmit={this.handleSubmit} className="mx-3">
           <textarea
-            className="form-control"
+            className="form-control chatArea"
             name="content"
             onChange={this.handleChange}
             value={this.state.content}
@@ -115,11 +115,11 @@ export default class Chat extends Component {
             <p className="text-danger">{this.state.error}</p>
           ) : null}
           <button type="submit" className="btn btn-info px-5 mt-4">
-            Send
+            Enviado
           </button>
         </form>
         <div className="py-5 mx-3">
-          Login in as:{" "}
+          Loggeado como:{" "}
           <strong className="text-info">{this.state.user.email}</strong>
         </div>
       </div>
