@@ -14,6 +14,8 @@ body {
   height: 400px;
   overflow-y: scroll;
   background-color: #f1f7f8;
+  width: 80vh;
+  margin-bottom: 10px;
 }
 
 .chat-area .chat-bubble {
@@ -71,5 +73,16 @@ body {
 }
 
 .chatArea{
-  width: 150vh;
+  width: 80vh;
+  resize: none;
+}
+
+.chat-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
